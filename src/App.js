@@ -10,6 +10,7 @@ import Spiner from "./components/Spiner"
 const App = () => {
   const [courses, setCourses] = useState(null);
   const [loading,setLoading]=useState(true);
+  const [category,setCategory] = useState(filterData[0].title)
 
   async function fetchData(){
     setLoading(true);
@@ -36,15 +37,19 @@ const App = () => {
         <Navbar />
       </div>
 
+      <div className="bg-bgDark2">
       <div>
-        <Filter filterData={filterData} />
+        <Filter filterData={filterData} category={category} setCategory={setCategory}/>
       </div>
 
-      <div>
+      <div className="w-11/12 max-w-[1200px] mx-auto flex justify-center items-center min-h-[50vh] flex-wrap">
        {
-          loading ? (<Spiner/>):(<Cards courses={courses}/>)
+          loading ? (<Spiner/>):(<Cards courses={courses} category={category}/>)
        }
       </div>
+      </div>
+
+     
     </div>
   );
 };
