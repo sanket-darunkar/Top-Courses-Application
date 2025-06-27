@@ -1,6 +1,6 @@
 # 🎓 Top Courses Application
 
-**Top Courses Application** is a React.js project that displays a curated list of top online courses across various categories. The app uses **\`useState()\`** and **\`useEffect()\`** hooks to manage state and fetch or filter course data dynamically.
+**Top Courses Application** is a React.js project that displays a curated list of top online courses across various categories. The app uses **\`useState()\`** and **\`useEffect()\`** hooks to manage state and fetch or filter course data dynamically..
 
 ## ✨ Features
 
@@ -45,7 +45,7 @@ Then visit: [http://localhost:3000](http://localhost:3000)
 - **Conditional Rendering** – to display courses based on category
 
 
----
+----
 
 > 🚀 Built with ❤️ by Sanket Darunkar using React.js, focusing on practical use of hooks like useState and useEffect.
 " > README.md
